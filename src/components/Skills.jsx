@@ -9,7 +9,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+    <section id="skills" className="scroll-mt-16 py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-white mb-12">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

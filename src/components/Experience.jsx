@@ -17,7 +17,7 @@ const ExperienceCard = ({ exp }) => (
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+    <section id="experience" className="scroll-mt-16 py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-white mb-12">Experience</h2>
         

@@ -2,7 +2,7 @@ import { personalInfo } from '../data/resumeData';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+    <section id="contact" className="scroll-mt-16 py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-12">Contact</h2>
         <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
