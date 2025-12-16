@@ -34,53 +34,88 @@ export const skills = {
 export const projects = [
   {
     id: 1,
+    name: "Incident Reporting Portal",
+    type: "Practicum – IATSE Local 891",
+    date: "Sep – Dec 2025",
+    description: "Developed RESTful backend APIs using Django Framework for a secure incident reporting system. Implemented role-based access control and authentication workflows, supporting anonymous reporting and administrative review. Dockerized the backend services to ensure consistent development and deployment environments.",
+    techStack: ["Django", "React", "PostgreSQL", "Docker"],
+    github: null,
+    demo: null,
+    githubRestricted: true,
+    demoRestricted: true,
+    demoPending: true
+  },
+  {
+    id: 2,
+    name: "FaaSify",
+    type: "Academic Project",
+    date: "Oct – Dec 2025",
+    description: "Collaborated in a team of 11 to develop a serverless e-commerce platform supporting buyer and seller accounts, storefronts, product listings, secure checkout, messaging, and store subscription. Implemented a storefront subscription and notification system using DynamoDB Streams and AWS Lambda to trigger automated email alerts via Amazon SES when new items are added. Built image upload functionality for seller listing by storing images in Amazon S3 and persisting S3 URLs in DynamoDB for scalable and reliable access.",
+    techStack: ["AWS", "API Gateway", "Amplify", "Lambda", "DynamoDB", "SES", "S3"],
+    github: "https://github.com/faasify-official",
+    demo: "https://youtu.be/g46ISXoRVmA"
+  },
+  {
+    id: 3,
+    name: "BirdQuest",
+    type: "Academic Project",
+    date: "Nov 2025",
+    description: "Collaborated in a team of 3 to build an AI-powered bird collection app that identifies bird species from uploaded images and tracks user collectibles. Integrated the Hugging Face ResNet-50 model by creating a custom Node.js + Express inference server to expose required classification details via REST APIs. Deployed the AI model on DigitalOcean and developed backend routes to communicate with the model and return predictions to the application.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "Hugging Face ResNet-50", "DigitalOcean"],
+    github: "https://github.com/Ephflores/COMP4537-T5PRJ",
+    demo: "https://youtu.be/d3TGQXP207U"
+  },
+  {
+    id: 4,
     name: "Recipe Finder",
     type: "Personal Project",
     date: "Aug 2025",
     description: "Built an Android application that allows users to search recipes by ingredients and browse a recipe catalogue. Integrated DummyJSON API for recipe data retrieval with dynamic query filtering. Implemented Room database for local persistence of favorite recipes.",
     techStack: ["Android", "Kotlin", "Jetpack Compose", "DummyJSON API", "Room Database"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Ephflores/MyMiniApp",
+    demo: "https://www.youtube.com/watch?v=RSUUGFcgwtg"
   },
   {
-    id: 2,
+    id: 5,
     name: "pos-integrator",
     type: "Practicum – Stocky AI",
     date: "Apr – May 2025",
     description: "Contributed to five agile sprints with daily stand-ups and sprint reviews. Developed FastAPI endpoints to fetch and normalize POS data from Square and Clover APIs. Stored transactional data in a Docker-hosted PostgreSQL database. Wrote Pytest unit tests to ensure API reliability and data consistency.",
     techStack: ["FastAPI", "PostgreSQL", "Docker", "Pytest", "Square API", "Clover API"],
-    github: "#",
-    demo: "#"
+    github: null,
+    demo: null,
+    githubRestricted: true,
+    demoRestricted: true
   },
   {
-    id: 3,
+    id: 6,
     name: "ReloCash",
     type: "Academic Project",
     date: "Feb – Apr 2025",
     description: "Developed a moving-services marketplace in a 3-person team using Node.js and JavaScript. Implemented authentication with Amazon Cognito. Managed application data using DynamoDB and stored media assets in Amazon S3/EFS. Deployed the application on Amazon EC2.",
     techStack: ["AWS", "Node.js", "DynamoDB", "Cognito", "S3", "EC2"],
-    github: "#",
+    github: "https://github.com/Ephflores/ReloCash",
     demo: "#"
   },
   {
-    id: 4,
+    id: 7,
     name: "CallScribe",
     type: "Personal Project",
     date: "Nov 2024",
     description: "Built a Python application that generates and analyzes call transcripts using OpenAI GPT APIs. Implemented audio file upload and direct recording features. Enabled users to query transcripts and receive AI-generated insights.",
     techStack: ["Python", "OpenAI API"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Ephflores/call_transcription",
+    demo: "https://youtu.be/ILUUtML91QU"
   },
   {
-    id: 5,
+    id: 8,
     name: "DocuMint",
     type: "Academic Project",
     date: "Apr – May 2024",
     description: "Collaborated in a team of five to build a blockchain-based document-to-NFT application. Developed the front-end using React and Tailwind CSS. Integrated MetaMask wallet authentication for secure user interactions.",
     techStack: ["React", "Tailwind", "Blockchain", "MetaMask"],
-    github: "#",
-    demo: "#"
+    github: "https://github.com/Donut11one/2800-202410-BBY02",
+    demo: "https://www.youtube.com/watch?v=75PPKfqIOZY"
   }
 ];
 
