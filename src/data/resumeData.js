@@ -9,7 +9,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  story: "Formerly an Embedded Software Engineer in the Philippines, I moved to a small town in Canada where limited tech opportunities led me to explore other paths, including work as an aircraft mechanic. However, my passion for computing never waned. I returned to school to sharpen my skills and completed a Computer Systems Technology diploma at BCIT, focusing on modern web development, cloud infrastructure, and API-driven systems. My experience building production-grade software for automotive systems taught me the importance of thorough testing, clear architecture, and delivering robust solutions. Now, I'm eager to reignite my tech career, bringing a unique perspective that combines my embedded systems background with knowledge in scalable cloud services and responsive full-stack applications."
+  story: "Formerly an Embedded Software Engineer in the Philippines, I moved to a small town in Manitoba, Canada where limited tech opportunities led me to explore other paths, including work as an aircraft mechanic. However, my passion for computing never waned. I returned to school to sharpen my skills and completed a Computer Systems Technology diploma at BCIT, focusing on modern web development, cloud infrastructure, and API-driven systems. My experience building production-grade software for automotive systems taught me the importance of thorough testing, clear architecture, and delivering robust solutions. Now, I'm eager to reignite my tech career, bringing a unique perspective that combines my embedded systems background with knowledge in scalable cloud services and responsive full-stack applications."
 };
 
 export const skills = {
@@ -37,7 +37,7 @@ export const projects = [
     name: "Incident Reporting Portal",
     type: "Practicum – IATSE Local 891",
     date: "Sep – Dec 2025",
-    description: "Developed RESTful backend APIs using Django Framework for a secure incident reporting system. Implemented role-based access control and authentication workflows, supporting anonymous reporting and administrative review. Dockerized the backend services to ensure consistent development and deployment environments.",
+    description: "Collaborated in a team of five to develop a full-stack incident reporting portal from scratch using Django, React, and PostgreSQL. Made significant contributions to backend development, including designing RESTful APIs, implementing role-based access control, and authentication workflows. Dockerized the backend services to ensure consistent development and deployment environments.",
     techStack: ["Django", "React", "PostgreSQL", "Docker"],
     github: null,
     demo: null,
@@ -140,7 +140,7 @@ export const technicalExperience = [
     period: "Oct 2011 – Jun 2015",
     responsibilities: [
       "Led six embedded software projects, handling estimation, task planning, progress tracking, and final delivery",
-      "Developed C and Assembly code for Toyota HVAC systems using the V-model development lifecycle",
+      "Developed embedded software in C and Assembly code for Toyota HVAC systems used in production vehicles,following the V-model development lifecycle",
       "Conducted unit and integration testing using Vector CANoe and Fujitsu Softune, applying black-box and white-box testing techniques",
       "Recognized for high performance and leadership, earning early assignment to senior-level projects"
     ]
