@@ -1,15 +1,15 @@
 export const personalInfo = {
   name: "Ephraim Flores",
-  title: "Software Developer | Cloud & Full-Stack",
+  title: "Software Engineer – Embedded Systems, Cloud & Full-Stack",
   location: "Vancouver, BC",
   phone: "204-595-8184",
   email: "ephraim.flores@gmail.com",
   linkedin: "https://linkedin.com/in/ephraim-flores/",
-  summary: "Software developer with a strong foundation in embedded systems and backend development, combined with hands-on experience in cloud-native and full-stack applications. Former Embedded Software Engineer at Denso Techno with experience delivering production-grade software for automotive systems. Currently completing a Computer Systems Technology diploma at BCIT, focusing on modern web development, cloud infrastructure, and API-driven systems. Passionate about building reliable, scalable software and transitioning fully into cloud and full-stack engineering roles."
+  summary: "Software developer with a strong foundation in embedded systems and backend development, combined with hands-on experience in cloud-native and full-stack applications. Former Embedded Software Engineer at Denso Techno with experience delivering production-grade software for automotive systems. Recently completed a Computer Systems Technology diploma at BCIT (December 2025), focusing on modern web development, cloud infrastructure, and API-driven systems. Passionate about building reliable, scalable software across embedded systems, cloud, and full-stack engineering domains."
 };
 
 export const about = {
-  story: "I transitioned from embedded software engineering to cloud and full-stack development, bringing a unique perspective rooted in systems thinking and reliability. My experience building production-grade software for automotive systems taught me the importance of thorough testing, clear architecture, and delivering robust solutions. Now, I'm focused on applying these principles to modern web applications and cloud infrastructure, combining my background in low-level systems with expertise in scalable backend services and responsive frontends."
+  story: "Formerly an Embedded Software Engineer in the Philippines, I moved to a small town in Canada where limited tech opportunities led me to explore other paths, including work as an aircraft mechanic. However, my passion for computing never waned. I returned to school to sharpen my skills and completed a Computer Systems Technology diploma at BCIT, focusing on modern web development, cloud infrastructure, and API-driven systems. My experience building production-grade software for automotive systems taught me the importance of thorough testing, clear architecture, and delivering robust solutions. Now, I'm eager to reignite my tech career, bringing a unique perspective that combines my embedded systems background with knowledge in scalable cloud services and responsive full-stack applications."
 };
 
 export const skills = {
