@@ -1,7 +1,8 @@
 import { technicalExperience, otherExperience } from '../data/resumeData';
+import useInView from '../hooks/useInView';
 
 const ExperienceCard = ({ exp }) => (
-  <div className="bg-gray-900 rounded-lg p-6 border border-gray-800">
+  <div className="bg-gray-900/80 rounded-xl p-6 border border-gray-800/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(15,23,42,0.9)] hover:border-blue-500/60">
     <div className="mb-4">
       <h3 className="text-2xl font-semibold text-white mb-1">{exp.title}</h3>
       <p className="text-lg text-blue-400 mb-1">{exp.company}</p>
@@ -16,10 +17,19 @@ const ExperienceCard = ({ exp }) => (
 );
 
 const Experience = () => {
+  const { ref, isVisible } = useInView();
+
   return (
-    <section id="experience" className="scroll-mt-16 py-20 px-4 sm:px-6 lg:px-8 bg-black">
+    <section
+      id="experience"
+      ref={ref}
+      className={`scroll-mt-16 py-20 px-4 sm:px-6 lg:px-8 bg-black/95 backdrop-blur-sm transition-all duration-700 ease-out transform ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+      }`}
+    >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12">Experience</h2>
+        <h2 className="text-4xl font-bold text-white mb-4">Experience</h2>
+        <div className="h-1 w-24 mb-10 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 rounded-full" />
         
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-white mb-8">Technical Work Experience</h3>

@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-xl font-semibold text-white hover:text-blue-400 transition-colors"
+            className="text-xl font-semibold text-white hover:text-blue-400 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 rounded"
           >
             EF
           </button>
@@ -53,7 +53,7 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 rounded"
               >
                 {item.label}
               </button>
@@ -62,7 +62,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-gray-300 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 rounded"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
@@ -84,7 +84,7 @@ const Navbar = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md text-sm font-medium transition-colors"
+                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
                 >
                   {item.label}
                 </button>

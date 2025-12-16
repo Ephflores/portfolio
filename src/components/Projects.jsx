@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { projects } from '../data/resumeData';
+import useInView from '../hooks/useInView';
 
 const VideoModal = ({ isOpen, onClose, videoUrl }) => {
+  const [animateIn, setAnimateIn] = useState(false);
+
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === 'Escape' && isOpen) {
@@ -12,11 +15,13 @@ const VideoModal = ({ isOpen, onClose, videoUrl }) => {
     if (isOpen) {
       document.addEventListener('keydown', handleEscape);
       document.body.style.overflow = 'hidden';
+      setAnimateIn(true);
     }
 
     return () => {
       document.removeEventListener('keydown', handleEscape);
       document.body.style.overflow = 'unset';
+      setAnimateIn(false);
     };
   }, [isOpen, onClose]);
 
@@ -52,11 +57,15 @@ const VideoModal = ({ isOpen, onClose, videoUrl }) => {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4"
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4 transition-opacity duration-300 ${
+        animateIn ? 'opacity-100' : 'opacity-0'
+      }`}
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl bg-gray-900 rounded-lg overflow-hidden"
+        className={`relative w-full max-w-4xl bg-gray-900 rounded-lg overflow-hidden transform transition-all duration-300 ${
+          animateIn ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4'
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -84,6 +93,7 @@ const VideoModal = ({ isOpen, onClose, videoUrl }) => {
 
 const Projects = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const { ref, isVisible } = useInView();
 
   const handleDemoClick = (e, demoUrl) => {
     e.preventDefault();
@@ -98,15 +108,23 @@ const Projects = () => {
 
   return (
     <>
-      <section id="projects" className="scroll-mt-16 py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+      <section
+        id="projects"
+        ref={ref}
+        className={`scroll-mt-16 py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/90 backdrop-blur-sm transition-all duration-700 ease-out transform ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+        }`}
+      >
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12">Projects</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Projects</h2>
+          <div className="h-1 w-24 mb-10 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 rounded-full" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-gray-800 rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-colors flex flex-col"
+                className="bg-gray-800/80 rounded-xl p-6 border border-gray-700/80 transition-all duration-300 flex flex-col hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(15,23,42,0.9)] hover:border-blue-500/60"
               >
+                <div className="h-0.5 w-16 mb-4 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 rounded-full" />
                 <div className="mb-4">
                   <h3 className="text-xl font-semibold text-white mb-2">{project.name}</h3>
                   <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">

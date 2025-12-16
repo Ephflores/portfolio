@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Ephraim Flores",
   title: "Software Engineer – Embedded Systems, Cloud & Full-Stack",
   location: "Vancouver, BC",
-  phone: "204-595-8184",
+  phone: "+1 (204) 595-8184",
   email: "ephraim.flores@gmail.com",
   linkedin: "https://linkedin.com/in/ephraim-flores/",
   summary: "Software developer with a strong foundation in embedded systems and backend development, combined with hands-on experience in cloud-native and full-stack applications. Former Embedded Software Engineer at Denso Techno with experience delivering production-grade software for automotive systems. Recently completed a Computer Systems Technology diploma at BCIT (December 2025), focusing on modern web development, cloud infrastructure, and API-driven systems. Passionate about building reliable, scalable software across embedded systems, cloud, and full-stack engineering domains."
