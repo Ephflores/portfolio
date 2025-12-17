@@ -89,16 +89,6 @@ export const projects = [
   },
   {
     id: 6,
-    name: "ReloCash",
-    type: "Academic Project",
-    date: "Feb – Apr 2025",
-    description: "Developed a moving-services marketplace in a 3-person team using Node.js and JavaScript. Implemented authentication with Amazon Cognito. Managed application data using DynamoDB and stored media assets in Amazon S3/EFS. Deployed the application on Amazon EC2.",
-    techStack: ["AWS", "Node.js", "DynamoDB", "Cognito", "S3", "EC2"],
-    github: "https://github.com/Ephflores/ReloCash",
-    demo: "#"
-  },
-  {
-    id: 7,
     name: "CallScribe",
     type: "Personal Project",
     date: "Nov 2024",
@@ -108,7 +98,7 @@ export const projects = [
     demo: "https://youtu.be/ILUUtML91QU"
   },
   {
-    id: 8,
+    id: 7,
     name: "DocuMint",
     type: "Academic Project",
     date: "Apr – May 2024",
