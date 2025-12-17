@@ -155,14 +155,14 @@ const Projects = () => {
                       className="px-4 py-2 bg-gray-700 text-gray-500 rounded text-sm cursor-not-allowed"
                       title="NDA Protected - Source code not available"
                     >
-                      GitHub
+                      GitHub (NDA)
                     </button>
                   ) : project.github && project.github !== '#' ? (
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm transition-colors"
+                      className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded text-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
                     >
                       GitHub
                     </a>
@@ -180,12 +180,12 @@ const Projects = () => {
                       className="px-4 py-2 bg-blue-600 text-blue-300 rounded text-sm cursor-not-allowed"
                       title={project.demoPending ? "Demo pending approval" : "NDA Protected - Demo not available"}
                     >
-                      {project.demoPending ? "Demo (Pending)" : "Demo"}
+                      {project.demoPending ? "Demo (Pending)" : "Demo (NDA)"}
                     </button>
                   ) : project.demo && project.demo !== '#' ? (
                     <button
                       onClick={(e) => handleDemoClick(e, project.demo)}
-                      className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded text-sm transition-colors"
+                      className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded text-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
                     >
                       Demo
                     </button>
