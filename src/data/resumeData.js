@@ -109,6 +109,17 @@ export const projects = [
   }
 ];
 
+export const games = [
+  {
+    id: 1,
+    name: "Obstacle Assault",
+    description: "An action-packed game built with Unreal Engine 5 featuring challenging obstacles and dynamic gameplay. Navigate through various levels, avoid obstacles, and test your reflexes in this exciting adventure.",
+    engine: ["Unreal Engine 5", "C++"],
+    itchUrl: "https://ephflores.itch.io/obstacle-assault",
+    embedUrl: "https://itch.io/embed/4162658?dark=true&border_width=0&bg_color=0f172a&fg_color=ffffff&link_color=3b82f6&border_color=1e293b"
+  }
+];
+
 export const technicalExperience = [
   {
     id: 1,
