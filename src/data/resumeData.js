@@ -35,7 +35,7 @@ export const projects = [
   {
     id: 1,
     name: "DownTime",
-    type: "nwHacks Hackathon",
+    type: "nwHacks 24-hour Hackathon",
     date: "Jan 2026",
     description: "Built a cross-platform mobile wellness app using React Native and Expo for iOS and Android. Developed a Node.js/Express backend with PostgreSQL to store mood check-ins and reflections. Used the OpenAI API to generate personalized wellness tips and emotional insights from user data.",
     techStack: ["React Native", "Expo", "Node.js", "Express", "PostgreSQL", "Prisma", "OpenAI API"],
