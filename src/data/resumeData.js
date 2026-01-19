@@ -40,7 +40,7 @@ export const projects = [
     description: "Built a cross-platform mobile wellness app using React Native and Expo for iOS and Android. Developed a Node.js/Express backend with PostgreSQL to store mood check-ins and reflections. Used the OpenAI API to generate personalized wellness tips and emotional insights from user data.",
     techStack: ["React Native", "Expo", "Node.js", "Express", "PostgreSQL", "Prisma", "OpenAI API"],
     github: "https://github.com/Ephflores/nw_hacks_2026_DownTime",
-    demo: "https://youtube.com/shorts/sBra9dkf2Cs"
+    demo: "https://youtu.be/89SkO-TzBxg"
   },
   {
     id: 2,
