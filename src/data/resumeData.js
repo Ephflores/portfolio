@@ -34,6 +34,16 @@ export const skills = {
 export const projects = [
   {
     id: 1,
+    name: "DownTime",
+    type: "nwHacks Hackathon",
+    date: "Jan 2026",
+    description: "Built a cross-platform mobile wellness app using React Native and Expo for iOS and Android. Developed a Node.js/Express backend with PostgreSQL to store mood check-ins and reflections. Used the OpenAI API to generate personalized wellness tips and emotional insights from user data.",
+    techStack: ["React Native", "Expo", "Node.js", "Express", "PostgreSQL", "Prisma", "OpenAI API"],
+    github: "https://github.com/Ephflores/nw_hacks_2026_DownTime",
+    demo: "https://youtube.com/shorts/sBra9dkf2Cs"
+  },
+  {
+    id: 2,
     name: "Incident Reporting Portal",
     type: "Practicum – IATSE Local 891",
     date: "Sep – Dec 2025",
@@ -46,7 +56,7 @@ export const projects = [
     demoPending: true
   },
   {
-    id: 2,
+    id: 3,
     name: "FaaSify",
     type: "Academic Project",
     date: "Oct – Dec 2025",
@@ -56,7 +66,7 @@ export const projects = [
     demo: "https://youtu.be/g46ISXoRVmA"
   },
   {
-    id: 3,
+    id: 4,
     name: "BirdQuest",
     type: "Academic Project",
     date: "Nov 2025",
@@ -66,7 +76,7 @@ export const projects = [
     demo: "https://youtu.be/d3TGQXP207U"
   },
   {
-    id: 4,
+    id: 5,
     name: "Recipe Finder",
     type: "Personal Project",
     date: "Aug 2025",
@@ -76,7 +86,7 @@ export const projects = [
     demo: "https://www.youtube.com/watch?v=RSUUGFcgwtg"
   },
   {
-    id: 5,
+    id: 6,
     name: "pos-integrator",
     type: "Practicum – Stocky AI",
     date: "Apr – May 2025",
@@ -88,7 +98,7 @@ export const projects = [
     demoRestricted: true
   },
   {
-    id: 6,
+    id: 7,
     name: "CallScribe",
     type: "Personal Project",
     date: "Nov 2024",
@@ -98,7 +108,7 @@ export const projects = [
     demo: "https://youtu.be/ILUUtML91QU"
   },
   {
-    id: 7,
+    id: 8,
     name: "DocuMint",
     type: "Academic Project",
     date: "Apr – May 2024",
