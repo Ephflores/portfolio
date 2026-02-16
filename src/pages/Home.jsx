@@ -20,16 +20,21 @@ const modalContent = {
   contact: <ContactModal />,
 }
 
+const defaultModalOptions = { gradient: 'from-cyan-500 to-blue-500', rect: null }
+
 const Home = () => {
   const [activeModal, setActiveModal] = useState(null)
+  const [modalOptions, setModalOptions] = useState(defaultModalOptions)
 
-  const openModal = (modalName) => {
+  const openModal = (modalName, options = defaultModalOptions) => {
     setActiveModal(modalName)
+    setModalOptions(options?.gradient ? options : defaultModalOptions)
     document.body.style.overflow = 'hidden'
   }
 
   const closeModal = () => {
     setActiveModal(null)
+    setModalOptions(defaultModalOptions)
     document.body.style.overflow = 'auto'
   }
 
@@ -37,7 +42,13 @@ const Home = () => {
     <div className="min-h-screen bg-slate-950">
       <BentoGrid openModal={openModal} />
       {activeModal && (
-        <Modal isOpen={activeModal !== null} onClose={closeModal} title={activeModal}>
+        <Modal
+          isOpen={activeModal !== null}
+          onClose={closeModal}
+          title={activeModal}
+          gradient={modalOptions.gradient}
+          rect={modalOptions.rect}
+        >
           {modalContent[activeModal]}
         </Modal>
       )}

@@ -23,7 +23,7 @@ const BentoGrid = ({ openModal }) => {
       size: 'small',
       gradient: 'from-green-500 to-teal-600',
       icon: <Mail className="w-6 h-6" />,
-      action: () => openModal('contact'),
+      action: (e) => openModal('contact', { gradient: 'from-green-500 to-teal-600', rect: e.currentTarget.getBoundingClientRect() }),
     },
     {
       id: 'about',
@@ -32,7 +32,7 @@ const BentoGrid = ({ openModal }) => {
       size: 'medium',
       gradient: 'from-indigo-500 to-blue-600',
       icon: <Lightbulb className="w-8 h-8" />,
-      action: () => openModal('about'),
+      action: (e) => openModal('about', { gradient: 'from-indigo-500 to-blue-600', rect: e.currentTarget.getBoundingClientRect() }),
     },
     {
       id: 'projects',
@@ -41,7 +41,7 @@ const BentoGrid = ({ openModal }) => {
       size: 'large',
       gradient: 'from-violet-500 to-purple-600',
       icon: <Briefcase className="w-8 h-8" />,
-      action: () => openModal('experience'),
+      action: (e) => openModal('experience', { gradient: 'from-violet-500 to-purple-600', rect: e.currentTarget.getBoundingClientRect() }),
     },
     {
       id: 'skills',
@@ -50,7 +50,7 @@ const BentoGrid = ({ openModal }) => {
       size: 'small',
       gradient: 'from-pink-500 to-rose-600',
       icon: <Code2 className="w-6 h-6" />,
-      action: () => openModal('skills'),
+      action: (e) => openModal('skills', { gradient: 'from-pink-500 to-rose-600', rect: e.currentTarget.getBoundingClientRect() }),
     },
     {
       id: 'experience',
@@ -59,7 +59,7 @@ const BentoGrid = ({ openModal }) => {
       size: 'medium',
       gradient: 'from-orange-500 to-red-600',
       icon: <Code2 className="w-8 h-8" />,
-      action: () => openModal('projects'),
+      action: (e) => openModal('projects', { gradient: 'from-orange-500 to-red-600', rect: e.currentTarget.getBoundingClientRect() }),
     },
     {
       id: 'games',
@@ -68,7 +68,7 @@ const BentoGrid = ({ openModal }) => {
       size: 'small',
       gradient: 'from-teal-500 to-emerald-600',
       icon: <Gamepad2 className="w-6 h-6" />,
-      action: () => openModal('games'),
+      action: (e) => openModal('games', { gradient: 'from-teal-500 to-emerald-600', rect: e.currentTarget.getBoundingClientRect() }),
     },
     {
       id: 'education',
@@ -77,7 +77,7 @@ const BentoGrid = ({ openModal }) => {
       size: 'small',
       gradient: 'from-amber-500 to-orange-600',
       icon: <GraduationCap className="w-6 h-6" />,
-      action: () => openModal('education'),
+      action: (e) => openModal('education', { gradient: 'from-amber-500 to-orange-600', rect: e.currentTarget.getBoundingClientRect() }),
     },
   ]
 
@@ -103,7 +103,7 @@ const BentoGrid = ({ openModal }) => {
             <div
               key={tile.id}
               onClick={tile.action}
-              onKeyDown={(e) => tile.action && (e.key === 'Enter' || e.key === ' ') && tile.action()}
+              onKeyDown={(e) => tile.action && (e.key === 'Enter' || e.key === ' ') && tile.action(e)}
               role={tile.action ? 'button' : null}
               tabIndex={tile.action ? 0 : null}
               className={`

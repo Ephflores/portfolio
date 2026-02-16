@@ -30,6 +30,83 @@
   animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* Modal: lava lamp blobs – travel to edges and bounce off */
+@keyframes modal-blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(52%, -48%) scale(1.05);
+  }
+  50% {
+    transform: translate(-55%, -45%) scale(0.96);
+  }
+  75% {
+    transform: translate(-50%, 48%) scale(1.04);
+  }
+}
+
+@keyframes modal-blob-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-58%, 50%) scale(0.97);
+  }
+  66% {
+    transform: translate(48%, 52%) scale(1.06);
+  }
+}
+
+@keyframes modal-blob-3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(50%, 55%) scale(1.03);
+  }
+  50% {
+    transform: translate(-48%, -52%) scale(0.95);
+  }
+  75% {
+    transform: translate(46%, -48%) scale(1.02);
+  }
+}
+
+/* Modal: emerge from tile */
+.modal-backdrop {
+  animation: modal-backdrop-in 0.25s ease-out forwards;
+}
+
+@keyframes modal-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-dialog {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-dialog--entering {
+  transform: scale(0.4);
+  opacity: 0;
+}
+
+.modal-dialog--open {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-dialog--exiting {
+  transform: scale(0.4);
+  opacity: 0;
+}
+
 .line-clamp-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
