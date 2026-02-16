@@ -84,12 +84,12 @@ const BentoGrid = ({ openModal }) => {
   const getSizeClass = (size, id) => {
     switch (size) {
       case 'large':
-        if (id === 'projects') return 'col-span-12 md:col-span-6 lg:col-span-4 row-span-2'
-        return 'col-span-12 md:col-span-6 lg:col-span-6 row-span-2'
+        if (id === 'projects') return 'col-span-12 md:col-span-6 lg:col-span-4 row-span-2 min-h-[280px] sm:min-h-0'
+        return 'col-span-12 md:col-span-6 lg:col-span-6 row-span-2 min-h-[280px] sm:min-h-0'
       case 'medium':
-        return 'col-span-12 md:col-span-6 lg:col-span-4 row-span-1'
+        return 'col-span-12 md:col-span-6 lg:col-span-4 row-span-1 min-h-[180px] sm:min-h-0'
       case 'small':
-        return 'col-span-6 md:col-span-3 lg:col-span-2 row-span-1'
+        return 'col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-2 row-span-1 min-h-[160px] sm:min-h-0'
       default:
         return 'col-span-12 md:col-span-4'
     }
@@ -98,7 +98,7 @@ const BentoGrid = ({ openModal }) => {
   return (
     <div className="min-h-screen p-4 md:p-8 lg:p-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-12 gap-4 auto-rows-[200px]">
+        <div className="grid grid-cols-12 gap-3 sm:gap-4 auto-rows-[200px]">
           {tiles.map((tile) => (
             <div
               key={tile.id}
