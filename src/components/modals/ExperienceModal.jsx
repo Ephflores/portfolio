@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Briefcase, MapPin, Calendar, ChevronDown, ChevronUp } from 'lucide-react'
 import { technicalExperience, otherExperience } from '@/data/resumeData'
 import { Card, CardContent } from '@/components/ui/card'
+import HighlightedText from '@/components/HighlightedText'
 
 const ExperienceCard = ({ exp, type, isExpanded, onToggle }) => (
   <Card className="bg-slate-800/50 border-slate-700 hover:border-cyan-500/30 transition-all duration-300">
@@ -33,7 +34,9 @@ const ExperienceCard = ({ exp, type, isExpanded, onToggle }) => (
           {isExpanded && (
             <ul className="space-y-2 mt-4 border-l-2 border-cyan-500/30 pl-4">
               {exp.responsibilities.map((resp, index) => (
-                <li key={index} className="text-gray-300 leading-relaxed text-sm">{resp}</li>
+                <li key={index} className="text-gray-300 leading-relaxed text-sm">
+                  <HighlightedText text={resp} />
+                </li>
               ))}
             </ul>
           )}

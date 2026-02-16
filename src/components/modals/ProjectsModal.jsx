@@ -3,6 +3,7 @@ import { ExternalLink, Github, Lock, Clock, ChevronLeft, ChevronRight } from 'lu
 import { projects } from '@/data/resumeData'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import HighlightedText from '@/components/HighlightedText'
 
 const ProjectsModal = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -58,7 +59,9 @@ const ProjectsModal = () => {
           <div className="flex items-center justify-between text-sm">
             <span className="text-cyan-400 font-medium">{currentProject.date}</span>
           </div>
-          <p className="text-gray-300 leading-relaxed">{currentProject.description}</p>
+          <p className="text-gray-300 leading-relaxed">
+            <HighlightedText text={currentProject.description} />
+          </p>
           <div className="pt-4 border-t border-slate-700">
             <p className="text-gray-500 text-xs mb-3 uppercase tracking-wider">Tech Stack</p>
             <div className="flex flex-wrap gap-2">

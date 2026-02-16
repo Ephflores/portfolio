@@ -1,6 +1,7 @@
 import { MapPin, Mail, Phone, Linkedin, Code2, Cloud, Cpu } from 'lucide-react'
 import { personalInfo, about } from '@/data/resumeData'
 import { Card, CardContent } from '@/components/ui/card'
+import HighlightedText from '@/components/HighlightedText'
 
 const AboutModal = () => {
   const highlights = [
@@ -38,14 +39,18 @@ const AboutModal = () => {
         <Card className="bg-slate-800/50 border-slate-700">
           <CardContent className="p-6">
             <h3 className="text-xl font-bold text-white mb-4">Quick Summary</h3>
-            <p className="text-gray-300 leading-relaxed">{personalInfo.summary}</p>
+            <p className="text-gray-300 leading-relaxed">
+              <HighlightedText text={personalInfo.summary} />
+            </p>
           </CardContent>
         </Card>
       </div>
       <Card className="bg-slate-800/50 border-slate-700">
         <CardContent className="p-6">
           <h3 className="text-xl font-bold text-white mb-4">My Journey</h3>
-          <p className="text-gray-300 leading-relaxed">{about.story}</p>
+          <p className="text-gray-300 leading-relaxed">
+            <HighlightedText text={about.story} />
+          </p>
         </CardContent>
       </Card>
       <div className="grid md:grid-cols-3 gap-6">

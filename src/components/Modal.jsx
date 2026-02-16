@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { X } from 'lucide-react'
 
-const BLOB_EASING = 'cubic-bezier(0.34, 1.56, 0.64, 1)'
+const BLOB_EASING = 'ease-in-out'
 
 const Modal = ({ isOpen, onClose, children, title, gradient = 'from-cyan-500 to-blue-500', rect = null }) => {
   const [entered, setEntered] = useState(false)
@@ -61,15 +61,15 @@ const Modal = ({ isOpen, onClose, children, title, gradient = 'from-cyan-500 to-
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-50" aria-hidden>
           <div
             className={`absolute -left-16 top-0 w-72 h-72 rounded-full blur-3xl bg-gradient-to-br ${gradient}`}
-            style={{ animation: `modal-blob 8s ${BLOB_EASING} infinite` }}
+            style={{ animation: `modal-blob 14s ${BLOB_EASING} infinite` }}
           />
           <div
             className={`absolute right-0 bottom-0 w-64 h-64 rounded-full blur-3xl bg-gradient-to-br ${gradient}`}
-            style={{ animation: `modal-blob-2 9s ${BLOB_EASING} infinite`, animationDelay: '2.4s' }}
+            style={{ animation: `modal-blob-2 16s ${BLOB_EASING} infinite`, animationDelay: '3.2s' }}
           />
           <div
             className={`absolute left-1/2 bottom-1/4 w-80 h-80 rounded-full blur-3xl bg-gradient-to-br ${gradient}`}
-            style={{ animation: `modal-blob-3 7s ${BLOB_EASING} infinite`, animationDelay: '1.1s' }}
+            style={{ animation: `modal-blob-3 12s ${BLOB_EASING} infinite`, animationDelay: '1.8s' }}
           />
         </div>
 
