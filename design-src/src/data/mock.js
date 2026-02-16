@@ -159,7 +159,7 @@ export const technicalExperience = [
     period: "Oct 2011 – Jun 2015",
     responsibilities: [
       "Led six embedded software projects, handling estimation, task planning, progress tracking, and final delivery",
-      "Developed embedded software in C and Assembly code for Toyota HVAC systems used in production vehicles,following the V-model development lifecycle",
+      "Developed embedded software in C and Assembly code for Toyota HVAC systems used in production vehicles, following the V-model development lifecycle",
       "Conducted unit and integration testing using Vector CANoe and Fujitsu Softune, applying black-box and white-box testing techniques",
       "Recognized for high performance and leadership, earning early assignment to senior-level projects"
     ]
@@ -282,4 +282,3 @@ export const education = [
     ]
   }
 ];
-
